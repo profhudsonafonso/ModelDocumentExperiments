@@ -1,0 +1,22 @@
+\subsection{Interpretation of the sf0.25 results}
+
+Table~\ref{tab:sf025_summary} summarizes the most relevant document configurations identified in the benchmark for this scale factor. 
+The interpretation follows the framework logic adopted in this study: configurations are assessed primarily by their effect on the latency of primary queries, and then by the regressions they induce on secondary affected queries and control queries. 
+For this reason, the main comparison criterion is not only average latency, but especially the variation in the 95th percentile latency (p95), since p95 captures the tail behavior of the workload and is more informative for performance-sensitive scenarios.
+
+In the \textit{associative\_family} family, the most favorable configuration according to the trade-off score was \texttt{watchitem\_g4}. This configuration produced a primary-query p95 variation of -, while the average variation in secondary affected queries was - and the average variation in control queries was -. According to the automated classification, this result can be described as \textit{Insufficient data}.
+
+In the \textit{containment\_family} family, the most favorable configuration according to the trade-off score was \texttt{series\_g7}. This configuration produced a primary-query p95 variation of +0.0\%, while the average variation in secondary affected queries was +0.0\% and the average variation in control queries was +0.0\%. According to the automated classification, this result can be described as \textit{Neutral candidate}.
+
+In the \textit{root\_local\_family} family, the most favorable configuration according to the trade-off score was \texttt{watchitem\_g3}. This configuration produced a primary-query p95 variation of -13.5\%, while the average variation in secondary affected queries was - and the average variation in control queries was -. According to the automated classification, this result can be described as \textit{Mild favorable trade-off}.
+
+From the perspective of configuration variables, the results also suggest that performance is not determined by a single factor, but by the interaction between structural depth, embedding strategy, and benchmark family. 
+For the variable \texttt{activated\_class}, the value \texttt{G3} was associated with an average trade-off score of 13.51, with average primary p95 variation -13.5\%, average secondary p95 variation -, and average control p95 variation -. This does not by itself prove causality, but it helps explain which design choices tend to align with better overall trade-offs in this experimental setting.
+
+For the variable \texttt{embedding\_variant}, the value \texttt{structural\_component} was associated with an average trade-off score of 13.51, with average primary p95 variation -13.5\%, average secondary p95 variation -, and average control p95 variation -. This does not by itself prove causality, but it helps explain which design choices tend to align with better overall trade-offs in this experimental setting.
+
+For the variable \texttt{benchmark\_family}, the value \texttt{root\_local\_family} was associated with an average trade-off score of 8.99, with average primary p95 variation -9.0\%, average secondary p95 variation -, and average control p95 variation -36.7\%. This does not by itself prove causality, but it helps explain which design choices tend to align with better overall trade-offs in this experimental setting.
+
+Overall, the sf0.25 results should be interpreted as a trade-off study rather than as a simple ranking of absolute latencies. 
+A configuration is methodologically stronger when it improves primary queries while keeping secondary and control regressions bounded. 
+Therefore, the final selection for implementation or discussion should prioritize configurations that combine meaningful primary-query gains with acceptable stability in the rest of the workload.

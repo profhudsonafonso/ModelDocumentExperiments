@@ -1,0 +1,19 @@
+\begin{table*}[ht]
+\centering
+\caption{Summary of the most relevant MongoDB configurations for sf0.25.}
+\label{tab:sf025_summary}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.4cm} p{1.8cm} p{1.2cm} p{1.4cm} p{0.9cm} p{2.2cm} p{1.6cm} p{1.7cm} p{1.6cm} p{1.3cm} p{3.2cm}}
+\toprule
+Family & Config & Class & Root & Depth & Variant & Primary $\Delta p95$ & Secondary $\Delta p95$ & Control $\Delta p95$ & Trade-off & Interpretation \\
+\midrule
+associative\_family & watchitem\_g4 & G4 & WatchItem & nan & associative\_partial & - & - & - & - & Insufficient data \\
+associative\_family & watchitem\_g5 & G5 & WatchItem & nan & associative\_snapshot & - & - & - & - & Insufficient data \\
+containment\_family & series\_g7 & G7 & Series & nan & containment\_baseline & +0.0\% & +0.0\% & +0.0\% & -0.00 & Neutral candidate \\
+containment\_family & series\_g9 & G9 & Series & nan & containment\_full & +416.5\% & -45.7\% & -31.9\% & -416.52 & Neutral candidate \\
+root\_local\_family & watchitem\_g3 & G3 & WatchItem & nan & structural\_component & -13.5\% & - & - & 13.51 & Mild favorable trade-off \\
+root\_local\_family & watchitem\_g2 & G2 & WatchItem & nan & shared\_descriptor & -13.5\% & - & -73.5\% & 13.45 & Mild favorable trade-off \\
+\bottomrule
+\end{tabular}
+\end{table*}

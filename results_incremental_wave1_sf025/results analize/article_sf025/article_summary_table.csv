@@ -1,0 +1,7 @@
+benchmark_family,config_name,activated_class,selected_root,proposed_embedding_depth,embedding_variant,primary_p95_pct_vs_baseline,secondary_p95_pct_vs_baseline,control_p95_pct_vs_baseline,tradeoff_score,tradeoff_class
+associative_family,watchitem_g4,G4,WatchItem,,associative_partial,,,,,Insufficient data
+associative_family,watchitem_g5,G5,WatchItem,,associative_snapshot,,,,,Insufficient data
+containment_family,series_g7,G7,Series,,containment_baseline,0.0,0.0,0.0,-0.0,Neutral candidate
+containment_family,series_g9,G9,Series,,containment_full,416.5175766065873,-45.69915541316384,-31.907165323815736,-416.5175766065873,Neutral candidate
+root_local_family,watchitem_g3,G3,WatchItem,,structural_component,-13.506117535524048,,,13.506117535524048,Mild favorable trade-off
+root_local_family,watchitem_g2,G2,WatchItem,,shared_descriptor,-13.452469536765898,,-73.48858460168908,13.452469536765898,Mild favorable trade-off
