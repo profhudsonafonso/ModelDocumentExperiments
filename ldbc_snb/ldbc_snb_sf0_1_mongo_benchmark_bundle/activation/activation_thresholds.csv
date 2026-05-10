@@ -1,0 +1,10 @@
+threshold,value
+high_delta_ratio,0.75
+medium_delta_ratio,0.4
+high_volatility,0.75
+medium_volatility,0.35
+high_sharedness,0.75
+medium_sharedness,0.25
+deep_depth,3.0
+medium_depth,2.0
+high_residual_traversal,3.0

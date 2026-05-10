@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw LDBC data and downloads
+data/
+downloads/
+*.tar.zst
+*.tar.zst.*
+*.zip
+
+# Local database files
+*.duckdb
+*.duckdb.wal
+mongo_data/
+
+# Large or local benchmark outputs
+results/**/execution.log
+results/**/benchmark_raw_results.csv
+
+# Keep aggregate results and summaries
+!results/**/benchmark_aggregate_results.csv
+!results/**/candidate_load_summary.csv
+!results/**/scale_db_initialization_summary.csv
+!results/**/benchmark_run_manifest.json
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

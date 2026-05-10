@@ -1,0 +1,4 @@
+query_group,n_queries,avg_Rc_weighted,avg_D,avg_Re,avg_DeltaRratio,avg_update_volatility,max_update_volatility,avg_observed_sharedness,max_observed_sharedness
+complex_read,7,5.0,3.0,2.0,0.6411564625857143,0.3541116372,1.0,0.060377485860329504,1.0
+insert,8,2.375,1.0,1.375,0.65,0.4815411176625,1.0,0.060129625888135925,1.0
+short_read,7,2.4285714285714284,1.4285714285714286,1.0,0.5928571428571429,0.42739358817142853,1.0,0.03975476176819916,1.0

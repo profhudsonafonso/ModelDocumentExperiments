@@ -1,0 +1,9 @@
+file_name,operation_code,official_id,query_name,observed_update_count,min_fields,max_fields
+updateStream_0_0_forum.csv,2,INS2,INS2_AddLikeToPost,44313,6,6
+updateStream_0_0_forum.csv,3,INS3,INS3_AddLikeToComment,30395,6,6
+updateStream_0_0_forum.csv,4,INS4,INS4_AddForum,3059,8,8
+updateStream_0_0_forum.csv,5,INS5,INS5_AddForumMembership,126615,6,6
+updateStream_0_0_forum.csv,6,INS6,INS6_AddPost,32610,15,15
+updateStream_0_0_forum.csv,7,INS7,INS7_AddComment,46969,14,14
+updateStream_0_0_forum.csv,8,INS8,INS8_AddFriendship,3197,6,6
+updateStream_0_0_person.csv,1,INS1,INS1_AddPerson,172,17,17

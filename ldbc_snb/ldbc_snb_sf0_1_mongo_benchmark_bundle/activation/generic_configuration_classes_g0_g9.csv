@@ -1,0 +1,11 @@
+g_class,family,role,label,description
+G0,association,baseline,Root document with referenced associations,Baseline root-centric document. Associated entities are kept mostly as references.
+G1,lookup,baseline,Single-entity lookup document,Minimal document for direct lookup queries with no structural traversal.
+G2,association,embedding_candidate,Root document with embedded low-risk associations,Embed associated data when reduction is high and sharedness/volatility are not high.
+G3,association,reference_or_summary_candidate,Root document with references or denormalized summaries,"Use references or summaries when association paths involve high sharedness, high volatility, or deeper traversals."
+G4,associative,baseline,Associative relationship as explicit document,"Represent associative relationships such as likes, membership, or friendship as first-class documents."
+G5,associative,source_embedded_edges,Source-root document with embedded associative edges,Embed associative edges near the source when fanout/sharedness risk is manageable.
+G6,associative,referenced_or_reverse_associative,Referenced or reverse-indexed associative pattern,"Use references, reverse lookups, or edge collections when associative relationships are volatile or highly shared."
+G7,containment,baseline,Containment baseline,Baseline containment-oriented root document.
+G8,containment,deep_embedding_candidate,Deep containment embedding,Embed contained children when containment is deep and sharedness/volatility are low.
+G9,containment,hybrid_containment_candidate,Hybrid containment with references or summaries,"Use hybrid containment when fanout, sharedness, or volatility makes full embedding risky."

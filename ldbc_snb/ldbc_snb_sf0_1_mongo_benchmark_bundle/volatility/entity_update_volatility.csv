@@ -1,0 +1,8 @@
+entity,update_impact_count,affected_by_inserts,entity_update_volatility
+Person,287330,"['INS1', 'INS2', 'INS3', 'INS4', 'INS5', 'INS6', 'INS7', 'INS8']",1.0
+Forum,162284,"['INS4', 'INS5', 'INS6']",0.5648000556851007
+Post,123892,"['INS2', 'INS6', 'INS7']",0.43118365642292833
+Tag,82810,"['INS1', 'INS4', 'INS6', 'INS7']",0.28820519959628305
+Place,79751,"['INS1', 'INS6', 'INS7']",0.2775589043956426
+Comment,77364,"['INS3', 'INS7']",0.2692513834267219
+Organisation,172,['INS1'],0.0005986148331187137

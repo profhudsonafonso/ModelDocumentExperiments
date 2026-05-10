@@ -1,0 +1,37 @@
+{
+  "bundle_name": "ldbc_snb_sf0_1_mongo_benchmark_bundle",
+  "dataset": "ldbc_snb",
+  "scale_label": "sf0.1",
+  "workload": "LDBC SNB Interactive v1 official-based subset",
+  "created_at": "2026-05-08T18:17:58.126412Z",
+  "methodology_stage": "after_candidate_generation_and_benchmark_plan_selection",
+  "summary": {
+    "n_final_queries": 22,
+    "n_mongodb_candidates": 64,
+    "n_full_plan_rows": 64,
+    "n_smoke_plan_rows": 24
+  },
+  "key_files": {
+    "candidate_specs_json": "mongo_configurations/mongodb_candidate_specs_by_candidate_id.json",
+    "candidate_specs_overview": "mongo_configurations/mongodb_candidate_specs_overview.csv",
+    "full_benchmark_plan": "mongo_configurations/benchmark_execution_plan.csv",
+    "smoke_benchmark_plan": "mongo_configurations/benchmark_execution_plan_smoke.csv",
+    "benchmark_manifest": "mongo_configurations/benchmark_manifest.json",
+    "final_analytical_matrix": "final_analytical_matrix/snb_final_analytical_matrix.csv",
+    "activation_matrix": "activation/snb_activation_matrix.csv",
+    "activation_summary": "activation/snb_activation_summary.csv",
+    "volatility_matrix": "volatility/matrix_with_update_volatility.csv",
+    "sharedness_matrix": "sharedness/matrix_with_sharedness.csv"
+  },
+  "benchmark_groups": [
+    "primary",
+    "secondary_affected",
+    "control"
+  ],
+  "notes": [
+    "This bundle contains methodology outputs and benchmark execution plans.",
+    "It does not contain raw LDBC SNB CSV data.",
+    "The benchmark runner should receive this bundle plus the extracted SF0.1 CSV dataset.",
+    "Use benchmark_execution_plan_smoke.csv first before running benchmark_execution_plan.csv."
+  ]
+}

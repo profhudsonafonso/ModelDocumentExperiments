@@ -1,0 +1,20 @@
+query_group,g_class,n_activations,queries
+complex_read,G0,7,"['IC1_TransitiveFriendsWithName', 'IC2_RecentMessagesByFriends', 'IC3_FriendsAndFriendsOfFriendsInCountries', 'IC4_NewTopics', 'IC5_NewGroups', 'IC6_TagCoOccurrence', 'IC7_RecentLikers']"
+complex_read,G3,7,"['IC1_TransitiveFriendsWithName', 'IC2_RecentMessagesByFriends', 'IC3_FriendsAndFriendsOfFriendsInCountries', 'IC4_NewTopics', 'IC5_NewGroups', 'IC6_TagCoOccurrence', 'IC7_RecentLikers']"
+complex_read,G4,2,"['IC5_NewGroups', 'IC7_RecentLikers']"
+complex_read,G6,2,"['IC5_NewGroups', 'IC7_RecentLikers']"
+complex_read,G7,2,"['IC3_FriendsAndFriendsOfFriendsInCountries', 'IC5_NewGroups']"
+complex_read,G9,2,"['IC3_FriendsAndFriendsOfFriendsInCountries', 'IC5_NewGroups']"
+insert,G0,5,"['INS1_AddPerson', 'INS4_AddForum', 'INS6_AddPost', 'INS7_AddComment', 'INS8_AddFriendship']"
+insert,G3,5,"['INS1_AddPerson', 'INS4_AddForum', 'INS6_AddPost', 'INS7_AddComment', 'INS8_AddFriendship']"
+insert,G4,3,"['INS2_AddLikeToPost', 'INS3_AddLikeToComment', 'INS5_AddForumMembership']"
+insert,G6,3,"['INS2_AddLikeToPost', 'INS3_AddLikeToComment', 'INS5_AddForumMembership']"
+insert,G7,2,"['INS6_AddPost', 'INS7_AddComment']"
+insert,G9,2,"['INS6_AddPost', 'INS7_AddComment']"
+short_read,G0,7,"['IS1_ProfileOfPerson', 'IS2_RecentMessagesOfPerson', 'IS3_FriendsOfPerson', 'IS4_ContentOfMessage', 'IS5_CreatorOfMessage', 'IS6_ForumOfMessage', 'IS7_RepliesOfMessage']"
+short_read,G1,1,['IS4_ContentOfMessage']
+short_read,G3,6,"['IS1_ProfileOfPerson', 'IS2_RecentMessagesOfPerson', 'IS3_FriendsOfPerson', 'IS5_CreatorOfMessage', 'IS6_ForumOfMessage', 'IS7_RepliesOfMessage']"
+short_read,G4,1,['IS2_RecentMessagesOfPerson']
+short_read,G6,1,['IS2_RecentMessagesOfPerson']
+short_read,G7,3,"['IS2_RecentMessagesOfPerson', 'IS6_ForumOfMessage', 'IS7_RepliesOfMessage']"
+short_read,G9,3,"['IS2_RecentMessagesOfPerson', 'IS6_ForumOfMessage', 'IS7_RepliesOfMessage']"
