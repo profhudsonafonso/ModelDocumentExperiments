@@ -1,0 +1,6 @@
+duckdb
+numpy
+pandas
+pymongo
+jupyter
+ipykernel
